@@ -13,7 +13,7 @@
 - git:
     local-name: sticky_fingers
     uri: https://github.com/cwru-robotics/cwru_stickyfingers.git
- - git:
+- git:
     local-name: simple_action_client
     uri: https://github.com/ros/actionlib.git
  
