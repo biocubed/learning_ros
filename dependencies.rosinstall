@@ -16,8 +16,4 @@
  - git:
     local-name: simple_action_client
     uri: https://github.com/ros/actionlib.git
- - git:
-    local-name: simple_action_client
-    uri: https://github.com/ros/actionlib.git
-   
  
