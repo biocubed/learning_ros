@@ -49,7 +49,6 @@
 <build_depend>arm7dof_traj_as</build_depend>
 <build_depend>ur_fk_ik</build_depend>
 <build_depend>joint_space_planner</build_depend>
-    <build_depend>simple_action_client</build_depend>
         <build_depend>message_generation</build_depend>
     <build_depend>actionlib</build_depend>
     <build_depend>tf</build_depend>
@@ -65,7 +64,6 @@
 <run_depend>std_msgs</run_depend>
 <run_depend>geometry_msgs</run_depend>
     <run_depend>actionlib</run_depend>
-    <run_depend>simple_action_client</run_depend>
     <run_depend>message_runtime</run_depend>
     <run_depend>baxter_trajectory_streamer</run_depend>
 <run_depend>tf</run_depend>
