@@ -22,4 +22,7 @@
 - git:
     local-name: ur_msgs
     uri: https://github.com/ros-industrial/universal_robot.git
+- git:
+    local-name: moveit-kinematics
+    uri: https://github.com/ros-planning/moveit.git
  
