@@ -16,4 +16,7 @@
 - git:
     local-name: simple_action_client
     uri: https://github.com/ros/actionlib.git
+- git:
+    local-name: baxter_core_msgs
+    uri: https://github.com/RethinkRobotics/baxter_common.git
  
