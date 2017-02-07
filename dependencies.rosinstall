@@ -19,4 +19,7 @@
 - git:
     local-name: baxter_core_msgs
     uri: https://github.com/RethinkRobotics/baxter_common.git
+- git:
+    local-name: ur_msgs
+    uri: https://github.com/ros-industrial/universal_robot.git
  
