@@ -40,7 +40,7 @@
   <!--   <test_depend>gtest</test_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   <buildtool_depend>catkin_simple</buildtool_depend>
-  <build_depend>geometry_msgs/Pose</build_depend>
+  <build_depend>geometry_msgs</build_depend>
   <build_depend>gazebo_msgs/ModelStates</build_depend>
   <build_depend>roscpp</build_depend>
   <build_depend>std_msgs</build_depend>
@@ -48,7 +48,7 @@
   
   <run_depend>roscpp</run_depend>
   <run_depend>std_msgs</run_depend>
-  <run_depend>geometry_msgs/Pose</run_depend>
+  <run_depend>geometry_msgs</run_depend>
   <!--<run_depend>gazebo_msgs/ModelStates</run_depend> -->
   <!-- The export tag contains other, unspecified, tags -->
   <export>
