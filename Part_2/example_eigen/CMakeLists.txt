@@ -10,10 +10,27 @@ find_package(catkin_simple REQUIRED)
 #find_package(PCL 1.7 REQUIRED)
 
 #uncomment the following 4 lines to use the Eigen library
-find_package(cmake_modules REQUIRED)
-find_package(Eigen3 REQUIRED)
-include_directories(${EIGEN3_INCLUDE_DIR})
-add_definitions(${EIGEN_DEFINITIONS})
+#This is needed as part of the migration to ros jade and later
+find_package(Eigen3)
+ 
+# this is depreciated but still necessary for now.
+if(NOT EIGEN3_FOUND)
+  # Fallback to cmake_modules
+  find_package(cmake_modules REQUIRED)
+  find_package(Eigen REQUIRED)
+  set(EIGEN3_INCLUDE_DIR ${EIGEN_INCLUDE_DIR})
+  set(EIGEN_DEP Eigen)
+  add_definitions(${EIGEN_DEFINITIONS})
+  # Possibly map additional variables to the EIGEN3_ prefix.
+else()
+  set(EIGEN3_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIR})
+  set(EIGEN_DEP Eigen3)
+  add_definitions(${EIGEN_DEFINITIONS})
+endif()
+
+include_directories(
+   ${EIGEN_INCLUDE_DIRS}
+ )
 
 catkin_simple()
 
